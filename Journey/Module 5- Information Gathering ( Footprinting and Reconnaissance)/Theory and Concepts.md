@@ -36,4 +36,5 @@ _B. OSINT_
 >Objectives
 
 _C. Email Footprinting_
-
+_D. Website Footprinting_
+E.
