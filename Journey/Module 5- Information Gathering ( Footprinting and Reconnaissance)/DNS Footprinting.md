@@ -65,8 +65,6 @@ DNS footprinting involves extracting various DNS records to understand the **loc
 - Shows **network blocks** and IP ranges
 - Helps discover **additional servers** in the same network
 - Assists in **targeted social engineering attacks**
-  
-![Dns](https://github.com/user-attachments/assets/4160e458-a085-4267-91c9-8367ded39bcc)
 
 ---
 
@@ -79,12 +77,8 @@ DNS footprinting involves extracting various DNS records to understand the **loc
 - **TXT Record** – SPF, DKIM, DMARC, and verification data
 - **CNAME Record** – Alias domains
 - **SOA Record** – Zone authority and configuration
-- **SRV Record** – Service Records
-- **SDA Record** – Indicate authority for domain
-- **PTR Record** – Maps IP address to a hostname
-- **RP Record** – Responsible Person
 
-
+![Dns](https://github.com/user-attachments/assets/4160e458-a085-4267-91c9-8367ded39bcc)
 
 ---
 
