@@ -72,6 +72,166 @@ Email tracking is the process of **monitoring the delivery, interaction, and beh
 
 ---
 
+## Important Tools for E-mail Footprinting
+
+E-mail footprinting tools help in **discovering email addresses, identifying email patterns, analyzing mail infrastructure, and assessing email security configurations**. These tools are used in both **passive (OSINT)** and **active** reconnaissance.
+
+---
+
+### Passive E-mail Footprinting Tools (Recommended First)
+
+These tools collect information from **publicly available sources** without directly interacting with the target’s mail servers.
+
+#### 🔹 theHarvester
+- Gathers email addresses from search engines, PGP key servers, and public sources
+- Useful for identifying employee emails and email formats
+
+**Information Collected:**
+- Email addresses
+- Subdomains
+- Associated hosts
+
+---
+
+#### 🔹 Hunter.io
+- Discovers email addresses related to a specific domain
+- Identifies common email naming conventions
+
+**Information Collected:**
+- Verified emails
+- Email patterns
+- Confidence scores
+
+---
+
+#### 🔹 Clearbit
+- Provides company-level intelligence
+- Maps employees to domains
+
+**Information Collected:**
+- Employee names
+- Email formats
+- Organizational data
+
+---
+
+#### 🔹 Google Dorking
+- Uses advanced search operators to extract emails from public sources
+
+**Examples:**
+- site:example.com "@example.com"
+- filetype:pdf "@example.com"
+
+---
+
+### Metadata Extraction Tools
+
+These tools analyze **public documents** to extract hidden metadata that may contain email addresses.
+
+#### 🔹 Metagoofil
+- Downloads public documents and extracts metadata
+
+**Information Collected:**
+- Author names
+- Email addresses
+- Software used to create documents
+
+---
+
+#### 🔹 ExifTool
+- Extracts metadata from multiple file formats
+
+**Information Collected:**
+- Embedded email addresses
+- Usernames
+- Timestamps
+
+---
+
+### Mail Server & DNS Analysis Tools
+
+Used to identify **email infrastructure and security configurations**.
+
+#### 🔹 MXToolbox
+- Online tool for mail server diagnostics
+
+**Information Collected:**
+- MX records
+- SPF, DKIM, DMARC status
+- Blacklist checks
+
+---
+
+#### 🔹 dig / nslookup
+- Command-line DNS query tools
+
+**Information Collected:**
+- Mail exchange servers
+- TXT records for SPF/DKIM/DMARC
+
+---
+
+### Email Reputation & Validation Tools
+
+Used to assess the **trustworthiness and existence of email addresses**.
+
+#### 🔹 EmailRep.io
+- Evaluates email reputation and risk
+
+**Information Collected:**
+- Spam indicators
+- Breach association
+- Domain age
+
+---
+
+#### 🔹 VerifyEmail / Email Validators
+- Checks whether an email address exists (active technique)
+
+⚠️ **Warning:** Active validation may trigger alerts and should only be used with permission.
+
+---
+
+### Email Tracking & Analysis Tools
+
+Used to analyze **email behavior and interactions**.
+
+#### 🔹 Mailtrack
+- Tracks email opens and read time
+
+---
+
+#### 🔹 Canarytokens (Email Tokens)
+- Detects when an email or link is accessed
+
+**Information Collected:**
+- IP address
+- Time of access
+- Browser information
+
+---
+
+## Tool Classification Summary
+
+| Category | Tools |
+|------|------|
+| OSINT | theHarvester, Hunter.io, Google Dorks |
+| Metadata | Metagoofil, ExifTool |
+| DNS Analysis | MXToolbox, dig, nslookup |
+| Reputation | EmailRep.io |
+| Tracking | Mailtrack, Canarytokens |
+
+---
+
+## Best Practices When Using Tools
+
+- Start with **passive tools only**
+- Correlate results from multiple tools
+- Avoid active validation without authorization
+- Document findings carefully
+
+---
+
 ## Ethical & Legal Considerations
 
 - Passive email analysis is generally acceptable in OSINT investigations
